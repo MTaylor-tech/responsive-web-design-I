@@ -352,7 +352,7 @@ li:before {
 }
 
 @media only screen and (max-width : 800px) {
-  /* For mobile phones: */
+  /* For tablets: */
 	.service {
 	    width: 100%;
 			background-color: #F2F3F4;
@@ -376,8 +376,9 @@ li:before {
 		flex-direction: column;
 		justify-content: space-between;
 		margin: 20px;
-		margin-top: 100px;
+		margin-top: 20px;
 		width: 95%;
+    justify-content: flex-start;
 	}
 
 	header nav a {
@@ -387,17 +388,24 @@ li:before {
 		height: 40px;
 		font-size: 20px;
 		text-align: center;
-		margin: 10px;
+		margin: 0px;
 		padding: 7px;
 	}
 
-	img.logo {
+  img.logo {
 		display: inline-block;
-		position: absolute;
+    position: relative;
+		/*position: absolute;
 	  top: -40px;
 		left: 55%;
-	  transform: translateX(-50%);
+	  transform: translateX(-50%);*/
+    order: -1;
+    align-self: center;
 	}
+
+  .iod-image {
+    display: none;
+  }
 }
 
 @media only screen and (max-width : 500px) {
@@ -423,9 +431,9 @@ li:before {
 	header nav {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		margin: 20px;
-		margin-top: 100px;
+		margin-top: 20px;
 		width: 95%;
 	}
 
@@ -436,15 +444,22 @@ li:before {
 		height: 40px;
 		font-size: 20px;
 		text-align: center;
-		margin: 10px;
+		margin: 0px;
 		padding: 7px;
 	}
 
 	img.logo {
 		display: inline-block;
-		position: absolute;
+    position: relative;
+		/*position: absolute;
 	  top: -40px;
 		left: 55%;
-	  transform: translateX(-50%);
+	  transform: translateX(-50%);*/
+    order: -1;
+    align-self: center;
 	}
+
+  .iod-image {
+    display: none;
+  }
 }
